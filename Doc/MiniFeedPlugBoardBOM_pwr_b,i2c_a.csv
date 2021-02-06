@@ -1,0 +1,29 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,lcsc#,manf#
+1,Unpolarized capacitor,C,C3 C5 C6 C7 C8 C9 C10 C11,100n,C_0603_1608Metric,8,~,C1591,CL10B104KB8NNNC
+2,Unpolarized capacitor,C,C1 C2 C4,10u,C_1206_3216Metric,3,~,C14860,CL31B106KAHNNNE
+3,Light emitting diode,LED,D1 D3,RED,LED_0603_1608Metric,2,~,C118330,D-060306R1/SS2/L
+4,"Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x07_Female,J2,Chain,PinSocket_1x07_P2.54mm_Horizontal,1,~,C225515,A2541HWR-7P
+5,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Male,J3 J4 J5 J6 J7 J8,Feeder,PogoEdgeConnector,6,~,,
+6,"Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x07_Male,J1,In,PinHeader_1x07_P2.54mm_Horizontal,1,~,C376125,MTB125-1107R1
+7,"Jumper, normally open, small symbol",Jumper_NO_Small,JP1,END,PinHeader_1x02_P2.54mm_Horizontal,1,~,C376120;C5305,MTB125-1102R1;C5305
+8,Resistor,R,R18 R19 R20 R21,0R,R_0603_1608Metric,4,~,C163836,WR06X0000FTL
+9,Resistor,R,R1 R6 R7 R8 R9 R10,100R,R_0603_1608Metric,6,~,C217683,ARG03FTC1000
+10,Resistor,R,R11,10k,R_0603_1608Metric,1,~,C128781,TC0325F1002T5E
+11,Resistor,R,R2 R3 R15,1k5,R_0805_2012Metric,3,~,C118217,TC0525F1501T5E
+12,"Level-Translating I2C Bus Buffer/Repeater 3.3mA Current Source, VSSOP-8",TCA9803,U1,PCA9517A,TSSOP-8_3x3mm_P0.65mm,1,https://www.nxp.com/docs/en/data-sheet/PCA9517A.pdf,C80799,PCA9517ADP
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Component Groups:,29,,,,,,,,
+Component Count:,62,,,,,,,,
+Fitted Components:,37,,,,,,,,
+Number of PCBs:,1,,,,,,,,
+Total components:,37,,,,,,,,
+Schematic Version:,,,,,,,,,
+Schematic Date:,,,,,,,,,
+PCB Variant:,pwr_b + i2c_a,,,,,,,,
+BoM Date:,07.02.2021 0:04:54,,,,,,,,
+Schematic Source:,MiniFeedPlugBoard.sch,,,,,,,,
+KiCad Version:,Eeschema (5.1.5)-3,,,,,,,,

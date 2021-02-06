@@ -1,0 +1,41 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet,lcsc#,manf#
+1,Unpolarized capacitor,C,C3 C7 C8 C9 C10 C11 C12,100n,C_0603_1608Metric,7,~,C1591,CL10B104KB8NNNC
+2,Unpolarized capacitor,C,C1 C2 C16 C20 C21 C22 C23,10u,C_1206_3216Metric,7,~,C14860,CL31B106KAHNNNE
+3,Unpolarized capacitor,C,C13 C14,10u 50V,C_1210_3225Metric,2,~,C337485,UMK325AB7106KM-P
+4,Unpolarized capacitor,C,C15,220p,C_0603_1608Metric,1,~,C27675,CL10C221JB8NNNC
+5,Unpolarized capacitor,C,C24,2n2,C_0603_1608Metric,1,~,C16033,CL10B222KB8NNNC
+6,Unpolarized capacitor,C,C17 C18 C19,47u,C_2220_5650Metric,3,~,C342293,CGA9N3X7R1C476MT0Y0N
+7,Light emitting diode,LED,D1 D3,RED,LED_0603_1608Metric,2,~,C118330,D-060306R1/SS2/L
+8,Schottky diode,D_Schottky,D2,SS2P4HM3,DO-220AA,1,~,C467996,SS2P4HM3/84A
+9,"Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x07_Female,J2,Chain,PinSocket_1x07_P2.54mm_Horizontal,1,~,C225515,A2541HWR-7P
+10,"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x06_Male,J3 J4 J5 J6 J7 J8,Feeder,PogoEdgeConnector,6,~,,
+11,"Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)",Conn_01x07_Male,J1,In,PinHeader_1x07_P2.54mm_Horizontal,1,~,C376125,MTB125-1107R1
+12,"Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",Screw_Terminal_01x02,J9,VIn,"PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal",1,~,C8387;C8466,WJ15EDGRC-3.81-2P;WJ15EDGK-3.81-2P
+13,"Jumper, normally open, small symbol",Jumper_NO_Small,JP1,END,PinHeader_1x02_P2.54mm_Horizontal,1,~,C376120;C5305,MTB125-1102R1;C5305
+14,Inductor,L,L1,33u,Inductor10x10mm,1,~,C253612,ABG10A50M330
+15,Resistor,R,R4 R5,0R,R_0603_1608Metric,2,~,C163836,WR06X0000FTL
+16,Resistor,R,R1 R6 R7 R8 R9 R10,100R,R_0603_1608Metric,6,~,C217683,ARG03FTC1000
+17,Resistor,R,R17,100k,R_0603_1608Metric,1,~,C133733,TC0325F1003T5E
+18,Resistor,R,R11 R14,10k,R_0603_1608Metric,2,~,C128781,TC0325F1002T5E
+19,Resistor,R,R12,150k,R_0603_1608Metric,1,~,C311920,ARG03DTC1503
+20,Resistor,R,R13,15k8,R_0603_1608Metric,1,~,C149924,TR0603B15K8P0525Z
+21,Resistor,R,R15,1k5,R_0805_2012Metric,1,~,C118217,TC0525F1501T5E
+22,Resistor,R,R16,309k,R_0603_1608Metric,1,~,C56054,TC0325B3093T5E
+23,,LMR16020,U2,LMR16020,SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias,1,https://www.ti.com/lit/ds/symlink/lmr16020.pdf?ts=1605917167325&ref_url=https%253A%252F%252Fwww.google.com%252F,C190006,LMR16020PDDAR
+24,"17V Input 2A Step-Down Converter MicroSiP Module with Integrated Inductor, μSiL-8",TPS82140,U3,TPS82140,Texas_SIL0008D_MicroSiP-8-1EP_2.8x3mm_P0.65mm_EP1.1x1.9mm_ThermalVias,1,http://www.ti.com/lit/ds/symlink/tps82140.pdf,C544385,TPS82140SILR
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Component Groups:,29,,,,,,,,
+Component Count:,62,,,,,,,,
+Fitted Components:,52,,,,,,,,
+Number of PCBs:,1,,,,,,,,
+Total components:,52,,,,,,,,
+Schematic Version:,,,,,,,,,
+Schematic Date:,,,,,,,,,
+PCB Variant:,pwr_a + i2c_b,,,,,,,,
+BoM Date:,07.02.2021 0:05:01,,,,,,,,
+Schematic Source:,MiniFeedPlugBoard.sch,,,,,,,,
+KiCad Version:,Eeschema (5.1.5)-3,,,,,,,,

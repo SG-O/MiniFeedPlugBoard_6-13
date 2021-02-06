@@ -1,0 +1,361 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 9
+Title "MiniFeedPlugBoard"
+Date "2021-02-07"
+Rev "v1.0"
+Comp "SG-O"
+Comment1 "©CC BY 4.0"
+Comment2 "13mm"
+Comment3 "6 Slot"
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x07_Female J2
+U 1 1 5FBED3E8
+P 11000 4600
+F 0 "J2" H 10800 5000 50  0000 L CNN
+F 1 "Chain" H 10800 4200 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Horizontal" H 11000 4600 50  0001 C CNN
+F 3 "~" H 11000 4600 50  0001 C CNN
+F 4 "C225515" H 11000 4600 50  0001 C CNN "lcsc#"
+F 5 "A2541HWR-7P" H 11000 4600 50  0001 C CNN "manf#"
+	1    11000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x07_Male J1
+U 1 1 5FBEFE57
+P 800 4600
+F 0 "J1" H 900 5000 50  0000 C CNN
+F 1 "In" H 900 4200 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 800 4600 50  0001 C CNN
+F 3 "~" H 800 4600 50  0001 C CNN
+F 4 "C376125" H 800 4600 50  0001 C CNN "lcsc#"
+F 5 "MTB125-1107R1" H 800 4600 50  0001 C CNN "manf#"
+	1    800  4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 4400 1100 4400
+Wire Wire Line
+	1100 4400 1100 5400
+Wire Wire Line
+	1000 4500 1700 4500
+Wire Wire Line
+	1000 4900 1600 4900
+Text Label 1600 4700 2    50   ~ 0
+SCL
+Text Label 1600 4800 2    50   ~ 0
+SDA
+Text Label 10300 4900 0    50   ~ 0
+ID_FB
+Wire Wire Line
+	10300 4900 10800 4900
+Text Label 10300 4600 0    50   ~ 0
+ID_Out
+Text Label 10300 4700 0    50   ~ 0
+SCL_Out
+Text Label 10300 4800 0    50   ~ 0
+SDA_Out
+Text Label 1600 4900 2    50   ~ 0
+ID_FB
+$Comp
+L Device:C C2
+U 1 1 5FCDEC81
+P 1700 5150
+F 0 "C2" H 1585 5104 50  0000 R CNN
+F 1 "10u" H 1585 5195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1738 5000 50  0001 C CNN
+F 3 "~" H 1700 5150 50  0001 C CNN
+F 4 "C14860" H 1700 5150 50  0001 C CNN "lcsc#"
+F 5 "CL31B106KAHNNNE" H 1700 5150 50  0001 C CNN "manf#"
+	1    1700 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10300 4900 10300 5000
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5FDEE267
+P 10300 5100
+F 0 "JP1" V 10254 5148 50  0000 L CNN
+F 1 "END" V 10345 5148 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 10300 5100 50  0001 C CNN
+F 3 "~" H 10300 5100 50  0001 C CNN
+F 4 "C376120;C5305" H 10300 5100 50  0001 C CNN "lcsc#"
+F 5 "MTB125-1102R1;C5305" H 10300 5100 50  0001 C CNN "manf#"
+	1    10300 5100
+	0    1    1    0   
+$EndComp
+Text Label 10600 5400 2    50   ~ 0
+ID_Out
+Wire Wire Line
+	10600 5400 10300 5400
+Wire Wire Line
+	10300 5200 10300 5400
+$Sheet
+S 2000 4000 800  1000
+U 602038B9
+F0 "Connector_A" 50
+F1 "connector.sch" 50
+F2 "ID_In" I L 2000 4600 50 
+F3 "ID_Out" O R 2800 4600 50 
+F4 "SDA_In" B L 2000 4800 50 
+F5 "SCL_In" B L 2000 4700 50 
+F6 "SCL_Out" B R 2800 4700 50 
+F7 "SDA_Out" B R 2800 4800 50 
+$EndSheet
+Wire Wire Line
+	1300 4300 1300 4200
+Wire Wire Line
+	10700 4300 10700 4200
+Wire Wire Line
+	10700 4300 10800 4300
+$Comp
+L power:+12V #PWR?
+U 1 1 6025782B
+P 10700 4200
+AR Path="/602038B9/6025782B" Ref="#PWR?"  Part="1" 
+AR Path="/6025782B" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 10700 4050 50  0001 C CNN
+F 1 "+12V" H 10715 4373 50  0000 C CNN
+F 2 "" H 10700 4200 50  0001 C CNN
+F 3 "" H 10700 4200 50  0001 C CNN
+	1    10700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 6026EDC2
+P 10400 4200
+AR Path="/602038B9/6026EDC2" Ref="#PWR?"  Part="1" 
+AR Path="/6026EDC2" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 10400 4050 50  0001 C CNN
+F 1 "+3.3V" H 10415 4373 50  0000 C CNN
+F 2 "" H 10400 4200 50  0001 C CNN
+F 3 "" H 10400 4200 50  0001 C CNN
+	1    10400 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4200 10400 4500
+Wire Wire Line
+	10400 4500 10800 4500
+Wire Wire Line
+	1700 4200 1700 4500
+Wire Wire Line
+	1700 4500 1700 5000
+Connection ~ 1700 4500
+Wire Wire Line
+	1700 5300 1700 5400
+Wire Wire Line
+	1000 4600 2000 4600
+Wire Wire Line
+	1000 4700 2000 4700
+Wire Wire Line
+	1000 4800 2000 4800
+$Comp
+L power:GND #PWR?
+U 1 1 602CB94D
+P 1100 5500
+AR Path="/602038B9/602CB94D" Ref="#PWR?"  Part="1" 
+AR Path="/602CB94D" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 1100 5250 50  0001 C CNN
+F 1 "GND" H 1105 5327 50  0000 C CNN
+F 2 "" H 1100 5500 50  0001 C CNN
+F 3 "" H 1100 5500 50  0001 C CNN
+	1    1100 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5500 1100 5400
+Connection ~ 1100 5400
+$Comp
+L Device:C C1
+U 1 1 602D05AD
+P 1300 5150
+F 0 "C1" H 1185 5104 50  0000 R CNN
+F 1 "10u" H 1185 5195 50  0000 R CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 1338 5000 50  0001 C CNN
+F 3 "~" H 1300 5150 50  0001 C CNN
+F 4 "C14860" H 1300 5150 50  0001 C CNN "lcsc#"
+F 5 "CL31B106KAHNNNE" H 1300 5150 50  0001 C CNN "manf#"
+	1    1300 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 5400 1300 5400
+Wire Wire Line
+	1300 5300 1300 5400
+Connection ~ 1300 5400
+Wire Wire Line
+	1300 5400 1700 5400
+Wire Wire Line
+	1300 5000 1300 4300
+Connection ~ 1300 4300
+Wire Wire Line
+	1000 4300 1300 4300
+$Sheet
+S 9400 4000 800  1000
+U 60304714
+F0 "I2C_Repeater" 50
+F1 "repeater.sch" 50
+F2 "SCL_In" B L 9400 4700 50 
+F3 "SDA_In" B L 9400 4800 50 
+F4 "SCL_Out" B R 10200 4700 50 
+F5 "SDA_Out" B R 10200 4800 50 
+F6 "ID_In" I L 9400 4600 50 
+F7 "ID_Out" O R 10200 4600 50 
+$EndSheet
+Wire Wire Line
+	10200 4600 10800 4600
+Wire Wire Line
+	10200 4700 10800 4700
+Wire Wire Line
+	10200 4800 10800 4800
+$Sheet
+S 2900 4000 800  1000
+U 6033A4F3
+F0 "Connector_B" 50
+F1 "connector.sch" 50
+F2 "ID_In" I L 2900 4600 50 
+F3 "ID_Out" O R 3700 4600 50 
+F4 "SDA_In" B L 2900 4800 50 
+F5 "SCL_In" B L 2900 4700 50 
+F6 "SCL_Out" B R 3700 4700 50 
+F7 "SDA_Out" B R 3700 4800 50 
+$EndSheet
+$Sheet
+S 3800 4000 800  1000
+U 6033B297
+F0 "Connector_C" 50
+F1 "connector.sch" 50
+F2 "ID_In" I L 3800 4600 50 
+F3 "ID_Out" O R 4600 4600 50 
+F4 "SDA_In" B L 3800 4800 50 
+F5 "SCL_In" B L 3800 4700 50 
+F6 "SCL_Out" B R 4600 4700 50 
+F7 "SDA_Out" B R 4600 4800 50 
+$EndSheet
+$Sheet
+S 4700 4000 800  1000
+U 6033BFE0
+F0 "Connector_D" 50
+F1 "connector.sch" 50
+F2 "ID_In" I L 4700 4600 50 
+F3 "ID_Out" O R 5500 4600 50 
+F4 "SDA_In" B L 4700 4800 50 
+F5 "SCL_In" B L 4700 4700 50 
+F6 "SCL_Out" B R 5500 4700 50 
+F7 "SDA_Out" B R 5500 4800 50 
+$EndSheet
+$Sheet
+S 5600 4000 800  1000
+U 6033CDE6
+F0 "Connector_E" 50
+F1 "connector.sch" 50
+F2 "ID_In" I L 5600 4600 50 
+F3 "ID_Out" O R 6400 4600 50 
+F4 "SDA_In" B L 5600 4800 50 
+F5 "SCL_In" B L 5600 4700 50 
+F6 "SCL_Out" B R 6400 4700 50 
+F7 "SDA_Out" B R 6400 4800 50 
+$EndSheet
+$Sheet
+S 6500 4000 800  1000
+U 6033D8FF
+F0 "Connector_F" 50
+F1 "connector.sch" 50
+F2 "ID_In" I L 6500 4600 50 
+F3 "ID_Out" O R 7300 4600 50 
+F4 "SDA_In" B L 6500 4800 50 
+F5 "SCL_In" B L 6500 4700 50 
+F6 "SCL_Out" B R 7300 4700 50 
+F7 "SDA_Out" B R 7300 4800 50 
+$EndSheet
+$Comp
+L power:GND #PWR?
+U 1 1 60348023
+P 10700 5000
+AR Path="/602038B9/60348023" Ref="#PWR?"  Part="1" 
+AR Path="/60348023" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 10700 4750 50  0001 C CNN
+F 1 "GND" H 10705 4827 50  0000 C CNN
+F 2 "" H 10700 5000 50  0001 C CNN
+F 3 "" H 10700 5000 50  0001 C CNN
+	1    10700 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 5000 10700 4400
+Wire Wire Line
+	10700 4400 10800 4400
+$Sheet
+S 1000 2000 1000 1000
+U 60357A0D
+F0 "Power" 50
+F1 "power.sch" 50
+$EndSheet
+$Comp
+L power:Vdrive #PWR01
+U 1 1 603696C6
+P 1300 4200
+F 0 "#PWR01" H 1100 4050 50  0001 C CNN
+F 1 "Vdrive" H 1317 4373 50  0000 C CNN
+F 2 "" H 1300 4200 50  0001 C CNN
+F 3 "" H 1300 4200 50  0001 C CNN
+	1    1300 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR02
+U 1 1 6036BC2E
+P 1700 4200
+F 0 "#PWR02" H 1700 4050 50  0001 C CNN
+F 1 "VBUS" H 1715 4373 50  0000 C CNN
+F 2 "" H 1700 4200 50  0001 C CNN
+F 3 "" H 1700 4200 50  0001 C CNN
+	1    1700 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2800 4600 2900 4600
+Wire Wire Line
+	2800 4700 2900 4700
+Wire Wire Line
+	2800 4800 2900 4800
+Wire Wire Line
+	3700 4600 3800 4600
+Wire Wire Line
+	3700 4700 3800 4700
+Wire Wire Line
+	3700 4800 3800 4800
+Wire Wire Line
+	4600 4600 4700 4600
+Wire Wire Line
+	4600 4700 4700 4700
+Wire Wire Line
+	4600 4800 4700 4800
+Wire Wire Line
+	5500 4600 5600 4600
+Wire Wire Line
+	5500 4700 5600 4700
+Wire Wire Line
+	5500 4800 5600 4800
+Wire Wire Line
+	6400 4600 6500 4600
+Wire Wire Line
+	6400 4700 6500 4700
+Wire Wire Line
+	6400 4800 6500 4800
+Wire Wire Line
+	7300 4600 9400 4600
+Wire Wire Line
+	7300 4700 9400 4700
+Wire Wire Line
+	7300 4800 9400 4800
+$EndSCHEMATC
